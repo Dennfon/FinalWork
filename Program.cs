@@ -4,4 +4,17 @@ string[] array3 = { "Russia", "Denmark", "Kazan" };
 
 string[] arrayWorking = new string[array1.Length];
 
+void ArrayWithValuesOfNoMoreThanThreeCharacters(string[] array1, string[] array2)
+{
+    int count = 0;
+    for (int i = 0; i < array1.Length; i++)
+    {
+        if (array1[i].Length < 4)
+        {
+            array2[count] = array1[i];
+            count++;
+        }
+    }
+
+}
 
